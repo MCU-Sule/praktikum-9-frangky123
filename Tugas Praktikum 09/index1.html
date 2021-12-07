@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="Frangky Hernandez 2172036">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        .bulat{
+            display: inline-block;
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            background-color:lightslategray;
+        }
+        .grid-container{
+            margin-left:auto;
+            margin-right:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <script>
+        
+        let inputan = prompt("Berapa NxN bola yang ingin dibuat?")
+        document.write("<div class='grid-container' style='width: "+inputan*60+"px; height:"+inputan*50+"px;'>")
+            
+        let hasil = inputan*inputan;
+        for(i=inputan; i>0; i--){
+            
+            for(j=hasil; j>=1; j--){
+
+                document.write("<div class='bulat'>" + hasil-- + "</div>");
+               
+                }
+             
+                
+            }
+          
+
+        
+      
+  
+       
+        
+        
+    </script></div>
+</body>
+</html>
